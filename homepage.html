@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href = "homepage.html"> AstroGeology</a></li>
+            <li><a href = "#bottom"> About Us </a></li>
+        </ul>
+    </nav>
+    <header>
+        <div class = "bggif"> 
+            <div class = "pages">
+                <div class = "column">
+                    <div class = "topCo">
+                        <a href = "asteroid.html"><img src = "asteroid.png"></a>
+                    </div>
+                    <div class = "midCo">
+                        <h1>ASTEROIDS</h1>
+                    </div>
+                    <div class = "botCo">
+                        <p>
+                            Mostly located in the asteroid belt between Mars and Jupiter, asteroids are tiny, stony objects that orbit the Sun. They differ greatly in size and comparison, and some have the potential to threaten Earth by impact. Click here to learn more about their astrogeology!
+                        </p>
+                    </div>
+                </div>
+                <div class = "column">
+                    <div class = "topCo">
+                        <a href = "planet.html"><img src = "planet.png"></a>
+                    </div>
+                    <div class = "midCo">
+                        <h1>PLANETS</h1>
+                    </div>
+                    <div class = "botCo">
+                        <p>
+                            Earth is one of the eight planets in our solar system, which are big celestial bodies that orbit stars. From gas giants like Jupiter and Saturn to rocky terrestrial planets like Mercury and Mars, they are all different in size and have different compositions and qualities. Click here to learn more about their astrogeology!
+                        </p>
+                    </div>
+                </div>
+                <div class = "column">
+                    <div class = "topCo">
+                        <a href = "moon.html"><img src = "moon.png"></a>
+                    </div>
+                    <div class = "midCo">
+                        <h1>MOONS</h1>
+                    </div>
+                    <div class = "botCo">
+                        <p>
+                            Moons are naturally occurring satellites of planets that range in size from tiny rocky entities to massive icy worlds. They have a significant impact on how planetary habitats are shaped, possibly even supporting life through regulating tides. Click here to learn more about their astrogeology!
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+<div id = "bottom"></div>
+    <footer>
+        <div class = "bggiff">
+            <div class = "ftop">
+                <h1>Special Thanks to these sources</h1>
+                    <div class = "fcontent">
+                        <p> Stars train gif - stars train pixel art https://ph.pinterest.com/pin/1072630836241051595/ <br> Flame meteor and asteroid vector illustration. Pinterest. (2022, June 6). https://ph.pinterest.com/pin/685673112030498460/ <br> MKBHD Samsung S20 Fe Wallpaper: Space art, Art Wallpaper, space illustration. Pinterest. (2021, February 16). https://ph.pinterest.com/pin/1407443623949201/</p>
+                        <p> Premium vector: The universe in my cup illustration: Kavramsal Sanat, modern Sanat, Tablolar. Pinterest. (2024a, May 13). https://ph.pinterest.com/pin/608548968429815494/ <br> Fantastic planet 001: Graphic design illustration, planet design, space art. Pinterest. (2020, April 17). https://ph.pinterest.com/pin/368239707034972128/ <br> Полная луна и звезды над горными вершинами: Премиум векторы: Landscape Wallpaper, scenery background, scenery wallpaper. Pinterest. (2024c, February 23). https://ph.pinterest.com/pin/477170523036134046/</p>
+                        <p> Artstation - 梦幻的一批作品，版权归属网易公司所有，仅做作品展示。图内涉及角色为项目组提供, Jun Dong Li: Scenery Wallpaper, anime scenery wallpaper, night landscape. Pinterest. (2021a, November 10). https://ph.pinterest.com/pin/584975439107249961/ <br> Encyclopædia Britannica, inc. (n.d.). Mineral deposits. Encyclopædia Britannica. https://www.britannica.com/science/geology/Mineral-deposits</p>
+                        <p> NASA. (n.d.). Asteroids: Facts - NASA science. NASA. https://science.nasa.gov/solar-system/asteroids/facts/ <br> Ian. (2021, January 4). S-type asteroids: Facts, information, History & Definition. The Nine Planets. https://nineplanets.org/s-type-asteroids/ <br> Ian. (2020, March 5). M-type asteroids: Facts, information, History & Definition. The Nine Planets. https://nineplanets.org/m-type-asteroids/ </p>
+                    </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<style>
+    body{
+        background:#fff;
+        margin: 0px;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    }
+    nav{
+        background: linear-gradient(rgba(255,255,255,0.2), rgba(255,255,255,0.2));
+        height: 10vh;
+        width: 100%;
+        position: fixed;
+        z-index: 100;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    nav ul li{
+        list-style: none;
+        display: inline-block;
+        margin-right: 4vh;
+    }
+
+    nav ul li a{
+        text-decoration: none;
+        color: #fff;
+        font-size: 1.1em;
+    }
+    .bggif{
+        width: 100%;
+        height: 100vh;
+        background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url("bg.gif");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .pages{
+        width: 90%;
+        height: 70%;
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .column{
+        margin: 10px;
+        width: 30%;
+        height: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        border-radius: 10px;
+        overflow: hidden;
+        opacity: 0.8;
+        transition: 0.2s ease;
+    }
+    .column a img{
+        transition: 0.2s ease;
+    }
+    .column a img:hover{
+        width: 30%; 
+        height: 100%;   
+    }
+
+    .column .topCo{
+        width: 100%;
+        height: 60%;
+        background: #2c3e50;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .column .topCo a{
+        text-align: center;
+    }
+    .column .topCo img{
+        width: 50%;
+        height: 60%;
+    }
+    .column .midCo{
+        width: 100%;
+        height: 10%;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        color: #333;
+    }
+    .column .botCo{
+        width: 100%;
+        height: 30%;
+        background: #bdc3c7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #333;
+    }
+    .column .botCo p{
+        width: 80%;
+        height: auto;
+        text-align: center;
+    }
+    footer{
+        background: #fff;
+        height: 100vh;
+        width: 100%;
+        position: relative;
+    }
+    .bggiff{
+        width: 100%;
+        height: 100vh;
+        background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.8)), url("bgf.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .ftop{
+        background: linear-gradient(rgba(255,255,255,0.2), rgba(255,255,255,0.2));
+        width: 60%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+    .ftop .fcontent{
+        flex-wrap: wrap;
+        width: 60%;
+        height: 60%;
+        display: flex;
+        justify-content: center;
+    }
+</style>
+</html>

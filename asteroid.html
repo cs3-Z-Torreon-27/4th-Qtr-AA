@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href = "homepage.html" class = "active">Home</a>
+        </nav>
+    </header>
+    <div class = "title">
+        <h1>Types of Asteroids</h1>
+    </div>
+    <div class = "timeline">
+        <div class = "checkpoint">
+            <div>
+                <h2> C-type (Carbonaceous) Asteroids </h2>
+                    <p> These asteroids are the most common type. </p>
+                    <p> Composition: Rich in carbon, water, and organic compounds. </p>
+                    <p> Location: Mostly found in the outer regions of the asteroid belt. </p>
+                    <p> Surface: Dark, with a low albedo. </p>
+                    <p> Geology: Primitive and unaltered, providing clues about the early solar system. They contain clays and silicate rocks.</p>
+
+            </div>
+        </div>
+        <div class = "checkpoint">
+            <div>
+                <h2> S-type (Silicaceous) Asteroids </h2>
+                    <p> Composition: Made up of silicate minerals and nickel-iron metal. </p>
+                    <p> Location: Predominantly found in the inner asteroid belt. </p>
+                    <p> Surface: Brighter than C-type asteroids. </p>
+                    <p> Geology: More processed and differentiated, indicating partial melting and differentiation in their history. </p>
+
+            </div>
+        </div>
+        <div class = "checkpoint">
+            <div>
+                <h2> M-type (Metallic) Asteroids </h2>
+                    <p> Composition: Rich in metallic iron and nickel. </p>
+                    <p> Location: Found in the middle region of the asteroid belt. </p>
+                    <p> Surface: Moderately reflective. </p>
+                    <p> Geology: Believed to be remnants of the metallic cores of differentiated parent bodies that were shattered by collisions. </p>
+            </div>
+        </div>
+        <div class = "checkpoint">
+            <div>
+                <h2> V-type (Vestoids): </h2>
+                    <p> Composition: Vestoids primarily consist of basaltic rock and silicate minerals typical of volcanic or magmatic materials. </p>
+                    <p> Location: These asteroids are predominantly found within the main asteroid belt, situated between the orbits of Mars and Jupiter, with many associated with the asteroid Vesta's family. </p>
+                    <p> Surface: Vestoids exhibit dark surface colors reflecting their basaltic composition, along with numerous impact craters and a layer of regolith formed by micrometeoroid bombardment. </p>
+                    <p> Geology: Geological features on Vestoids include volcanic structures like lava flows and cones, suggesting past volcanic activity, as well as potential signs of differentiation indicating their formation from melted materials. </p>
+            </div>
+        </div>
+    </div>
+</body>
+<style>
+    body{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.75)), url(asteroid.jpg);
+    }
+    a{
+        text-decoration: none;
+    }
+    header{
+        width: 1140px;
+        max-width: 80%;
+        margin: auto;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        position: relative;
+        z-index: 100;
+    }
+    header nav a{
+        color: #eee;
+        margin-right: 5px;
+        padding: 5px 10px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 12px;
+        transition: 0.2s;
+        font-weight: 400;
+    }
+    header nav a.active, header nav a:hover{
+        background: #2c3e50;
+        border-radius: 2px;
+    }
+    h1{
+        font-size: 3em;
+    }
+    h2{
+        color:#2c3e50;
+        margin-bottom: 0.5em;
+    }
+    .title{
+        color: #66FCF1;
+        text-align: center;
+    }
+    .title p{
+        color: #66FCF1;
+        font-size: 1.3em;
+        letter-spacing: 2px;
+    }
+    .timeline{
+        margin: 5em auto;
+        max-width: 34.15em;
+    }
+    .checkpoint{
+        max-width: 34em;
+        padding-top: 2em;
+        padding-bottom: 2em;
+        position: relative;
+    }
+    .checkpoint div{
+        border: 2px solid #2c3e50;
+        border-radius: 1em;
+        padding: 1.5em;
+    }
+    .checkpoint p{
+        line-height: 27px;
+        color: #C5C6C7;
+    }
+    .checkpoint:nth-child(odd){
+        border-left: 3px solid #C5C6C7;
+        padding-left: 3em;
+        transform: translateX(17.1em);
+    }
+    .checkpoint:nth-child(even){
+        border-right: 3px solid #C5C6C7;
+        padding-right: 3em;
+        transform: translateX(-16.9em);
+    }
+    .checkpoint:nth-child(odd)::before,
+    .checkpoint:nth-child(even)::before{
+        content: '';
+        background: #C5C6C7;
+        width: 3em;
+        height: 3px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .checkpoint:nth-child(odd)::before{
+        left: 0;
+    }
+    .checkpoint:nth-child(even)::before{
+        right: 0;
+    }
+    .checkpoint:nth-child(odd) div::before,
+    .checkpoint:nth-child(even) div::before{
+        content:'';
+        background: #C5C6C7;
+        box-shadow: 0 0 0.5em #0d71fc;
+        width: 0.8em;
+        height: 0.8em;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        border-radius: 50%;
+    }
+    .checkpoint:nth-child(odd) div::before{
+        left:-0.5em;
+    }
+    .checkpoint:nth-child(even) div::before{
+        right:-0.5em;
+    }
+</style>
+</html>

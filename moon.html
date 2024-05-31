@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href = "homepage.html"> Home</a></li>
+        </ul>
+    </nav>
+    <div class = "ad">
+        <div class = "content1">
+            <div class="title"> Io (Moon of Jupiter) </div>
+                <div class = "content2">
+                    <p>
+                        Composition: Io's surface is primarily composed of sulfur and silicate rock, with active volcanoes erupting sulfur compounds.
+                    </p>
+                    <p>
+                        Location: Io is the innermost of Jupiter's Galilean moons, orbiting at a distance of about 421,700 kilometers from Jupiter.
+                    </p>
+                    <p>
+                        Surface: Io's surface is dominated by colorful volcanic plains, lava flows, and calderas, with few impact craters due to ongoing volcanic activity.
+                    </p>
+                    <p>
+                        Geology: Io's geology is characterized by extensive volcanic activity driven by tidal heating from Jupiter's gravity, resulting in a constantly changing surface landscape.
+                    </p>
+                </div>
+        </div>
+    
+        <div class = "content1">
+            <div class="title"> Titan (Moon of Saturn) </div>
+                <div class = "content2">
+                    <p>
+                        Composition: Titan's atmosphere is primarily composed of nitrogen, with methane and ethane clouds, while its surface features lakes and rivers of liquid methane and ethane.
+                    </p>
+                    <p>
+                        Location: Titan is the largest moon of Saturn, orbiting at an average distance of about 1,221,870 kilometers from Saturn.
+                    </p>
+                    <p>
+                        Surface: Titan's surface is obscured by a thick haze, but radar mapping has revealed a diverse landscape including hydrocarbon lakes, dunes, and cryovolcanic features.
+                    </p>
+                    <p>
+                        Geology: Titan's geology is shaped by a combination of surface processes including erosion by liquid methane and ethane, cryovolcanism, and tectonic activity.
+                    </p>
+                </div>
+        </div>
+        <div class = "content1">
+            <div class="title"> Titania (Moon of Uranus) </div>
+                <div class = "content2">
+                    <p>
+                        Composition: Titania's surface is composed of water ice and rocky material, with some regions showing signs of tectonic activity.
+                    </p>
+                        Location: Titania is the largest moon of Uranus, orbiting at an average distance of about 436,300 kilometers from Uranus.
+                    </p>
+                    <p>
+                        Surface: Titania's surface is heavily cratered, with impact basins and dark patches thought to be regions of relatively fresh ice.
+                    </p>
+                    <p>
+                        Geology: Titania's geology includes fault scarps, valleys, and ridges, suggesting past tectonic activity that has modified its surface.
+                    </p>
+                </div>
+        </div>
+        <div class = "content1">
+            <div class="title"> Triton (Moon of Neptune) </div>
+                <div class = "content2">
+                    <p>
+                        Composition: Triton's surface is a mix of geologically young icy plains, ridges, and impact craters, with evidence of cryovolcanism. 
+                    </p>
+                    <p>
+                        Location: Triton is the largest moon of Neptune and is believed to be a captured Kuiper Belt object, orbiting at an average distance of about 354,800 kilometers from Neptune.
+                    </p>
+                    <p>
+                        Surface: Triton's surface features icy plains, cryovolcanic terrains, and dark streaks formed by geysers erupting nitrogen gas and dark particles.
+                    </p>
+                    <p>
+                        Geology: Triton's geology includes evidence of recent geological activity such as cryovolcanism and resurfacing processes that have erased older impact craters.
+                    </p>
+                </div>
+        </div>
+    </div>
+</body>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    }
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.75)), url(moons.jpg);
+        background-repeat: no-repeat;
+        background-size:cover;
+    }
+    nav{
+
+        height: 10vh;
+        width: 50%;
+        position: fixed;
+        z-index: 100;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    nav ul li{
+        list-style: none;
+        display: inline-block;
+        margin-right: 4vh;
+    }
+
+    nav ul li a{
+        text-decoration: none;
+        color: #fff;
+        font-size: 1.1em;
+    }
+    .ad{
+        width: 800px;
+    }
+    .ad .content1{
+        position: relative;
+        margin: 10px 20px;
+    }
+    .ad .content1 .title{
+        position: relative;
+        padding: 10px;
+        background: #2c3e50;
+        color: #fff;
+        cursor: pointer;
+    }
+    .ad .content1 .title::before{
+        content: "+";
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        transform: translateY(-50%);
+        font-size: 1.5em;
+    }
+    .ad .content1.active .title::before{
+        content: "-";
+    }
+    .ad .content1 .content2{
+        position: relative;
+        background: #fff;
+        height: 0;
+        overflow: hidden;
+        transition: 0.5s;
+        overflow-y: auto;
+    }
+    .ad .content1.active .content2{
+        height: 150px;
+        padding: 10px;
+    }
+</style>
+<script>
+    const accordion = document.getElementsByClassName("content1");
+
+    for (i = 0; i < accordion.length; i++){
+        accordion[i].addEventListener("click", function(){
+            this.classList.toggle("active")
+        })
+    }
+</script>
+</html>
